@@ -1,11 +1,17 @@
 /* styles/style.css */
 
 /* Общие настройки */
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 92px 50px;
+    margin: 0 50px;
 }
 
 .header__menu {
@@ -33,12 +39,14 @@
 }
 
 .header__logo {
-    justify-self: center;
+    display: block;
+    width: 148px;
+    height: 105px;
 }
 
 .header__logo-image {
-    width: 148px;
-    height: 105px;
+    width: 100%;
+    height: 100%;
 }
 
 .header__address {
@@ -50,7 +58,6 @@
 }
 
 .header__address a {
-    display: block;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
 }
@@ -62,6 +69,7 @@
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0 50px;
 }
 
 .overlay {
@@ -85,6 +93,7 @@
     font-size: 100px;
     line-height: 1.15;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
 }
 
 .aligned-text {
@@ -93,14 +102,16 @@
 
 .aligned-text_center {
     text-align: center;
+    margin-left: 60px;
 }
 
 .aligned-text_right {
     text-align: right;
+    margin-left: 120px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 0.3em;
+    letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -138,6 +149,7 @@
 /* Секция с лотами */
 .lots {
     padding: 180px 50px;
+    margin: 0 50px;
 }
 
 .lots__heading {
@@ -219,6 +231,12 @@
     grid-template-columns: 430px 1fr;
     gap: 25px;
     padding: 0 50px 180px;
+    margin: 0 50px;
+}
+
+.about__column {
+    display: flex;
+    flex-direction: column;
 }
 
 .about__logo {
@@ -227,7 +245,7 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    margin: 0 auto;
+    margin: 0 95px;
     background-color: #000;
     border-radius: 50%;
 }
@@ -252,11 +270,20 @@
     line-height: 1.2;
 }
 
+.about__text p:first-child {
+    margin-bottom: 25px;
+}
+
+.about__text p:last-child {
+    margin-bottom: 0;
+}
+
 /* Подвал */
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 180px 50px 90px;
+    margin: 0 50px;
 }
 
 .footer .address {
@@ -267,7 +294,6 @@
 }
 
 .footer .address a {
-    display: block;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
 }
