@@ -708,3 +708,7 @@
   letter-spacing: 0;
   line-height: 24.3px;
 }
+
+.element * {
+    transform: translateX(-3px);
+}
